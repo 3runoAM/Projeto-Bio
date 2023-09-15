@@ -1,0 +1,68 @@
+.discografia-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0 0 0;
+    background: var(--disco-bg-14);
+    border-radius: 50px;
+    height: 98.125rem;
+
+}
+
+.discografia-title, .discografia-data{
+    font: 200 2rem/1.5rem var(--aviano-serif);
+    margin: 0;
+}
+
+.discografia-title {
+    margin: 3.8rem;
+}
+
+.discografia-controls{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+    width: 31.25rem;
+}
+
+.discografia.divider {
+    background-color: var(--disco-controls-14);
+    height: 0.25rem;
+    margin: 0;
+}
+
+.arrow-left {
+    background: url("/assets/images/arrow-left.svg") no-repeat;
+}
+
+.arrow-right{
+    background: url("/assets/images/arrow-right.svg") no-repeat;
+}
+
+.arrow-left, .arrow-right {
+    background-size: cover;
+    width: 2.5rem;
+    height: 3.125rem;
+}
+
+.music-preview{
+    width: 47.3125rem;
+    height: 22.1875rem;;
+    flex-shrink: 0;
+    border: var(--disco-controls-14) 3.125rem;
+    margin:  5.56rem 0 5.56rem 0;
+}
+
+.description-container {
+    text-align: center;
+    margin: 0;
+}
+
+.era-description {
+    margin: 0;
+}
+
+.halsey-description {
+    margin: 0;
+}
