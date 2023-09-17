@@ -5,7 +5,7 @@
 
     /*Discografia*/
     --disco-bg-14: #537F79;
-    --disco-controls-14: #242A26;
+    --disco-controls-14: #282828;
     --disco-bg-15: #C999B0;
     --disco-controls-15: #3D6FAE;
     --disco-bg-17: #E64344;
@@ -21,9 +21,6 @@
     --red-hat-text: "Red hat text", sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     background-color: var(--chinese-black);
@@ -31,8 +28,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
+a.lancamento-text {
+    color: white;
+    text-decoration: unset;
+    font-size: 1.5rem;
+}
 
 .divider {
     background-color: var(--white);
@@ -47,11 +50,15 @@ body {
     margin: 0;
 }
 
+.divider.first {
+    margin: 0;
+}
 
-
-
-
-footer > .main-icon { !important;
-    width: 1px;
-    height: 1px;
+.scroll-top {
+    position: sticky;
+    right: 1rem;
+    background: url("/assets/images/scroll-top.svg") no-repeat;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
 }

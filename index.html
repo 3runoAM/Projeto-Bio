@@ -13,67 +13,129 @@
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/bio.css">
         <link rel="stylesheet" href="assets/css/lancamento.css">
-        <link rel="stylesheet" href="assets/css/discrografia.css">
+        <link rel="stylesheet" href="assets/css/discografia.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
         <title>Halsey Fanpage</title>
     </head>
     <body>
-        <header class="header-section">
+        <header id="section" class="header-section">
             <div class="header">
-                <svg class="main-icon"></svg>
-                <svg class="menu-icon"></svg>
+                <a href="#section"><svg class="main-icon"></svg></a>
+                <nav class="nav-bar">
+                    <a href="#bio" class="lancamento-text">Biografia</a>
+                    <a href="#discografia" class="lancamento-text">Discografia</a>
+                    <a href="#redes" class="lancamento-text">Redes sociais</a>
+                </nav>
             </div>
         </header>
-        <span class="divider big"></span>
-        <section class="bio-section">
+
+        <section id="bio" class="biosection">
             <div class="bio">
                 <div class="bio-images">
                     <span class="bio-gradient"></span>
                     <span class="bio-image"></span>
                     <span class="bio-name"></span>
                 </div>
-                <p class="bio-text">Anagrama de seu verdadeiro nome Ashley, Halsey é uma cantora, compositora e poetisa norte-americana.
+                <h1 class="bio-text">Halsey, anagrama de seu verdadeiro nome Ashley, é uma cantora, compositora e poetisa norte-americana.
                     Começou na música enquanto crescia, aprendendo originalmente a tocar violino, viola e violoncelo até
-                    mudar para o violão acústico quando tinha 14 anos.</p>
+                    mudar para o violão acústico quando tinha 14 anos.</h1>
             </div>
         </section>
         <span class="divider"></span>
         <section class="lancamento">
-            <p class="lancamento-text">Último lançamento</p>
+            <h2 class="lancamento-text">Último lançamento</h2>
             <iframe class="lancamento-video" src="https://www.youtube.com/embed/9PdH-zavwO4?si=QoC5Ks76qnUkWQB2"
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </section>
 
-        <section class="discografia-section">
-            <p class="discografia-title">Discografia</p>
-            <span class="discografia divider"></span>
+        <section id="discografia" class="discografia-section">
+            <span class="discografia divider top"></span>
             <div class="discografia-controls">
                 <span class="arrow-left"></span>
-                <p class="discografia-data">2014</p>
+                <p class="discografia-title">Discografia</p>
                 <span class="arrow-right"></span>
             </div>
             <span class="discografia divider"></span>
-            <iframe class="music-preview" src="https://open.spotify.com/embed/track/5dcYoYFAXh0f0qI05AoufB?utm_source=generator" width="100%" height="200" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <div class="description-container">
-                <p class="era-description">“Room 93” é o EP de estreia de Halsey, ele a lançou à fama sendo muitos os que
-                    atribuem a "Ghost", seu primeiro single e o single principal deste EP, como seu sucesso de destaque.
+            <div id="slide1" class="slide active">
+                <iframe class="music-preview" src="https://www.youtube.com/embed/ao4o-XRU_KM?si=dw2daEa4fiyp9HiZ&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="description-container">
+                    <p class="era-description"><span class="bold">2014<br>Room 93</span> é o EP de estreia de Halsey, ele a lançou à fama sendo muitos os que
+                        atribuem a "Ghost", seu primeiro single e o single principal deste EP, como seu sucesso de destaque.
+                    </p>
+                    <cite class="halsey-description">“O EP é uma narrativa sobre como em um quarto de hotel, devido à intimidade
+                        forçada, você pode realmente ser você mesmo por um tempo ou pode realmente ser alguém que você não é.
+                        Portanto, trata-se de relacionamentos humanos sob a perspectiva dessa mentalidade de rato de laboratório
+                        ou mentalidade de câmera de segurança.”
+                        <br>— Halsey</cite>
+                </div>
+            </div>
+            <div id="slide2" class="slide">
+                <iframe class="music-preview" src="https://www.youtube.com/embed/JGulAZnnTKA?si=PntBO0T1bhpJqxF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="description-container">
+                    <p class="era-description"><span class="bold">2015<br>Badlands</span> é o primeiro álbum de estudio de
+                        Halsey. O nome Badlands é uma referência ao estado mental de Halsey enquanto escrevia o álbum e é utilizado
+                        para dar um lugar físico como metáfora para uma mente desolada e solitária.
+                    </p>
+                    <cite class="halsey-description">“A ideia de "Badlands" era criar um espaço com som, o que é realmente difícil
+                        de fazer. Eu estava em uma sessão com Tim Anderson, e ele estava apenas brincando com esses sons baixos e
+                        envolventes, e então eu escrevi "Drive" em provavelmente uns 10 minutos.”
+                        <br>— Halsey</cite>
+                </div>
+            </div>
+            <div id="slide3" class="slide">
+                <span class="discografia divider"></span>
+                <iframe class="music-preview" src="https://www.youtube.com/embed/kzQTc0-iBX8?si=PYta13ck0qy6VwIV&amp;start=34" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="description-container">
+                <p class="era-description"><span class="bold">2017<br>Hopeless Fountain Kingdom</span> foi o segundo album de estudio
+                    de Halsey. O álbum foi citado pela primeira vez nos créditos de seu álbum de estreia, "Badlands", que
+                    terminam com as palavras "O garoto que vive atrás dos tijolos, HFK".
                 </p>
-                <p class="halsey-description">“O EP é uma narrativa sobre como em um quarto de hotel, devido à intimidade
-                    forçada, você pode realmente ser você mesmo por um tempo ou pode realmente ser alguém que você não é.
-                    Portanto, trata-se de relacionamentos humanos sob a perspectiva dessa mentalidade de rato de laboratório
-                    ou mentalidade de câmera de segurança.”
-                    — Halsey</p>
+                <cite class="halsey-description">“Para mim, 'Hopeless Fountain Kingdom' é uma história sobre duas pessoas que
+                    desejam tanto estar apaixonadas que estão dispostas a mudar a si mesmas por seu amor e, ao fazer isso,
+                    deixam morrer as versões reais de si mesmas, então é uma história à la Romeu e Julieta.”
+                    <br>— Halsey</cite>
+            </div>
+            </div>
+            <div id="slide4" class="slide">
+                <iframe class="music-preview" src="https://www.youtube.com/embed/ZAfAud_M_mg?si=FLe2hwLwlt-8OA6s&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="description-container">
+                <p class="era-description"><span class="bold">2020<br>Manic</span> é o terceiro álbum de estúdio de Halsey.
+                    O conceito do álbum é que ele foi feito "por Ashley para Halsey" - a verdadeira identidade de Halsey se
+                    comunicando com sua persona musical.
+                </p>
+                <cite class="halsey-description">“O álbum trata muito sobre eu superar alguns traumas e coisas que, de outra
+                    forma, estavam me impedindo de me sentir realmente eu mesma em minha juventude. E ter 25 anos e lançar um
+                    álbum foi difícil para mim porque eu tinha uma nova perspectiva sobre minha feminilidade, minha sexualidade
+                    e as coisas que passei.”
+                    <br>— Halsey</cite>
+            </div>
+            </div>
+            <div id="slide5" class="slide">
+                <iframe class="music-preview" src="https://www.youtube.com/embed/7Azv0G85lh8?si=pxa9yhmQSCu3YIlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="description-container">
+                <p class="era-description"><span class="bold">2021<br>If I Can't Have Love, I Want Power</span> é o quarto
+                    álbum de estúdio de Halsey. Apresentando uma forte influência industrial, e foi descrito por Halsey como um
+                    álbum conceitual sobre "as alegrias e horrores da gravidez e do parto".
+                </p>
+                <cite class="halsey-description">"Meu corpo pertenceu ao mundo de muitas maneiras nos últimos anos, e essa
+                    imagem é minha maneira de recuperar minha autonomia e afirmar meu orgulho e força como uma força vital para
+                    meu ser humano."
+                    <br>— Halsey</cite>
+            </div>
             </div>
         </section>
 
+        <span class="footer divider"></span>
+
         <footer class="footer">
-            <svg class="main-icon"></svg>
-            <a href=""><svg class="twitter"></svg></a>
-            <a href=""><svg class="instagram"></svg></a>
-            <a href=""><svg class="youtube"></svg></a>
-            <a href=""><svg class="soundcloud"></svg></a>
+            <div id="redes" class="footer-content">
+                <a href="https://www.halseymusicstore.com/"><svg class="footer-main-icon"></svg></a>
+                <a href="https://www.instagram.com/iamhalsey/"><ion-icon class="instagram" size="large" name="logo-instagram"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCOCgB3xd-B-1qAm-hR9OLrA"><ion-icon class="youtube" size="large" name="logo-youtube"></ion-icon></a>
+                <a href="https://x.com/halsey"><svg class="logo-x"></svg></a>
+            </div>
         </footer>
 
-        <span class="scroll-top"><svg class="scroll-top image"></svg></span>
+        <script src="/assets/scripts/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

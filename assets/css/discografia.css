@@ -1,12 +1,13 @@
-.discografia-section{
+.discografia-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 0 0 0;
+    align-self: center;
+    margin: 10rem 0 10rem 0;
     background: var(--disco-bg-14);
     border-radius: 50px;
-    height: 98.125rem;
-
+    width: 50%;
+    height: 102rem;
 }
 
 .discografia-title, .discografia-data{
@@ -15,7 +16,7 @@
 }
 
 .discografia-title {
-    margin: 3.8rem;
+    margin: 0;
 }
 
 .discografia-controls{
@@ -28,8 +29,12 @@
 
 .discografia.divider {
     background-color: var(--disco-controls-14);
-    height: 0.25rem;
+    height: 0.1rem;
     margin: 0;
+}
+
+.discografia.divider.top {
+    margin: 5rem 0 0 0;
 }
 
 .arrow-left {
@@ -47,22 +52,49 @@
 }
 
 .music-preview{
-    width: 47.3125rem;
-    height: 22.1875rem;;
-    flex-shrink: 0;
-    border: var(--disco-controls-14) 3.125rem;
-    margin:  5.56rem 0 5.56rem 0;
+    width: 31.3125rem;
+    height: 18rem;
+    margin:  5.56rem 0 4rem 0;
+    border: 2rem solid #282828;
+    border-top: none;
+    border-bottom: none;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50rem;
     text-align: center;
     margin: 0;
 }
 
 .era-description {
-    margin: 0;
+    font: 400 2.3125rem var(--red-hat-text);
+    margin: 0 0 0 0;
 }
 
 .halsey-description {
+    font: 700 2.3125rem var(--red-hat-text);
+    font-style: italic;
     margin: 0;
+}
+
+.era-description, .halsey-description {
+    width: 45.5rem;
+}
+
+.slide.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide{
+    display: none;
 }

@@ -1,9 +1,12 @@
+.biosection {
+    height: 61rem;
+}
 .bio {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 73rem;
+    position: relative;
 }
 
 .bio-gradient {
@@ -14,8 +17,8 @@
     height: 35.1875rem;
     border-radius: 35.1875rem;
     margin: 0;
-    top: 20rem;
-    left: 13rem;
+    top: 18rem;
+    left: 14rem;
 }
 
 .bio-image {
@@ -24,8 +27,8 @@
     width: 26.2rem;
     height: 30.375rem;
     position: absolute;
-    top: 23rem;
-    left: 11rem;
+    top: 20rem;
+    left: 12rem;
 }
 
 .bio-name {
@@ -34,8 +37,8 @@
     width: 26.2rem;
     height: 18rem;
     position: absolute;
-    bottom: 38.99rem;
-    left: 11rem;
+    bottom: 13.990000000000002rem;
+    left: 14rem;
 }
 
 .bio-text {
