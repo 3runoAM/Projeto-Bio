@@ -14,11 +14,6 @@ svg.main-icon.dark {
     background-size: cover;
 }
 
-
-.gradient.dark {
-    background: radial-gradient(50% 50% at 50% 50%, var(--red) 0%, var(--chinese-black) 100%);
-}
-
 .release-container.dark {
     background-color: #3F0A6F95;
 }
@@ -68,6 +63,8 @@ svg.main-icon.dark {
 
 .scroll-top.dark {
     background: url("/assets/images/dark/scroll-top.svg") no-repeat;
+    background-size: cover;
+    z-index: 3;
 }
 
 .switch-container.dark {
@@ -77,7 +74,7 @@ svg.main-icon.dark {
 .switch-button.dark {
     transition: ease 0.5s;
     background: var(--white);
-    transform: translateX(40px);
+    transform: translateX(50px);
     width: 47px;
     height: 47px;
 }
@@ -107,8 +104,24 @@ svg.main-icon.dark {
 .scroll-container.dark,
 .signature.dark,
 .bio-container.dark,
-.images-container.dark,
-.photo.dark,
 #moon.dark {
     background-color: unset;
+}
+
+@media screen and (max-width: 1600px) {
+    .switch-container.dark {
+        width: 90px;
+        height: 45px;
+    }
+
+    #moon.dark {
+        width: 20px;
+        height: 20px;
+    }
+
+    .switch-button.dark {
+        width: 37px;
+        height: 37px;
+        transform: translateX(40px);
+    }
 }

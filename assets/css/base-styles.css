@@ -1,6 +1,6 @@
 :root {
     /*Cores primárias*/
-    --chinese-black: #101011;
+    --chinese-black: #141414;
     --white: #ffffff;
     --red: #FD0000;
 
@@ -42,7 +42,7 @@ html {
     justify-content: space-between;
     row-gap: 19rem;
 }
-
+/*----------------------------*/
 /* Começo Header e nav*/
 .header {
     width: 100%;
@@ -51,7 +51,7 @@ html {
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    column-gap: 33rem;
+    column-gap: 1rem;
     background: var(--white);
     z-index: 3;
     box-shadow: 0 0.005rem 0.5rem var(--chinese-black);
@@ -69,7 +69,7 @@ html {
     display: flex;
     align-items: center;
     border: 1px solid var(--chinese-black);
-    width: 100px;
+    width: 110px;
     height: 60px;
     border-radius: 10rem;
 }
@@ -101,7 +101,6 @@ html {
     display: none;
 }
 
-
 .nav-bar {
     width: 55%;
     display: flex;
@@ -114,6 +113,7 @@ html {
     color: var(--chinese-black);
     font: normal 1.8rem var(--aviano-serif);
     text-decoration: unset;
+    text-align: center;
 }
 
 .nav-link:hover {
@@ -204,7 +204,7 @@ html {
 
 .disco-divider {
     background-color: var(--chinese-black);
-    width: 80%;
+    width: 90%;
     height: 0.05rem;
 }
 
@@ -212,7 +212,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 9rem;
 }
 
@@ -268,7 +268,7 @@ html {
     align-self: center;
     justify-content: space-around;
     gap: 0.05rem;
-    width: 80%;
+    width: 90%;
     height: 55rem;
     border-radius: 1rem;
 }
@@ -370,4 +370,198 @@ html {
     position: fixed;
     top: 48rem;
     right: 2.8rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .content-container{
+        row-gap: 15rem;
+    }
+    /* Começo Header e nav*/
+    .header{
+        height: 8.2rem;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+    .main-icon {
+        width: 8rem;
+        height: 4rem;
+    }
+    .switch-container {
+        width: 90px;
+        height: 45px;
+    }
+    #sun {
+        width: 20px;
+        height: 20px;
+    }
+    .switch-button {
+        width: 37px;
+        height: 37px;
+    }
+    /*-----------------------------*/
+    /*Começo da seção biografia*/
+    .bio-container{
+        margin-top: 20rem;
+        gap: 2rem;
+    }
+    .gradient {
+        width: 20rem;
+        height: 24rem;
+        top: -2rem;
+        right: 0rem;
+    }
+    .photo {
+        width: 20rem;
+    }
+    .signature {
+        width: 16rem;
+        height: 10.5rem;
+        left: 1rem;
+        bottom: -5rem;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Começo da Ultimo Lançamento*/
+    .release-container{
+        height: 40rem;
+    }
+    .release-title{
+        font-size: 2rem;
+    }
+    .release-video{
+        width: 50rem;
+        height: 28rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Começo do carrosel*/
+    .disco-controls {
+        width: 90%;
+        height: 7rem;
+    }
+    .arrow-left, .arrow-right {
+        width: 2.4rem;
+        height: 3rem;
+    }
+    .carousel-container{
+        margin-top: 0.5rem;
+    }
+    .disco-title {
+        font-size: 2rem;
+    }
+    .disco-data {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .disco-video{
+        width: 39rem;
+        height: 22rem;
+    }
+    .slide.active {
+        height: 40rem;
+        row-gap: 0.5rem;
+    }
+    .slide-content-container {
+        height: 32rem;
+    }
+    .disco-description-container{
+        height: 26rem;
+    }
+    .disco-description {
+        font-size: 1.5rem;
+    }
+    .disco-halsey-description {
+        font-size: 1.5rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Começo do footer*/
+    .footer {
+        height: 8.2rem;
+    }
+    .social-icon{
+        height: 3rem;
+    }
+    .x-logo {
+        width: 4rem;
+        height: 3rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Scroll to top*/
+    .scroll-top {
+        width: 5.1rem;
+        height: 5.2rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .content-container{
+        row-gap: 10rem;
+    }
+    /*Começo da seção biografia*/
+    .description-container{
+        width: 40%;
+    }
+    .description {
+        font-size: 1.5rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Começo da Ultimo Lançamento*/
+    .release-container{
+        height: 35rem;
+    }
+    .release-title{
+        font-size: 1.8rem;
+    }
+    .release-video{
+        width: 45rem;
+        height: 24rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Começo do carrosel*/
+    .disco-controls {
+        width: 90%;
+        height: 6rem;
+    }
+    .arrow-left, .arrow-right {
+        width: 2.2rem;
+        height: 2.8rem;
+    }
+    .disco-title {
+        font-size: 1.8rem;
+    }
+    .disco-data {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .disco-video{
+        width: 35rem;
+        height: 20rem;
+    }
+    .slide.active {
+        height: 38rem;
+    }
+    .slide-content-container {
+        height: 37rem;
+    }
+    .disco-description-container{
+        height: 20rem;
+    }
+    .disco-description {
+        font-size: 1.3rem;
+    }
+    .disco-halsey-description {
+        font-size: 1.3rem;
+    }
+    /*----------------------------------------------------------*/
+    /*Scroll to top*/
+    .scroll-top {
+        width: 4.6rem;
+        height: 4.7rem;
+    }
+}
+
+@media screen and (max-width: 1184px) {
+
 }

@@ -14,18 +14,18 @@
         <link rel="stylesheet" href="assets/css/dark-mode.css">
         <title>Halsey Fanpage</title>
     </head>
-    <body class="">
-        <div class="content-container ">
+    <body>
+        <div class="content-container">
             <header class="header ">
                 <a href="#section"><svg class="main-icon "></svg></a>
+                <div class="switch-container">
+                    <input id="switch" type="checkbox">
+                    <label class="switch-button" for="switch">
+                        <ion-icon id="sun" name="sunny-outline"></ion-icon>
+                        <ion-icon id="moon" name="moon-outline"></ion-icon>
+                    </label>
+                </div>
                 <nav class="nav-bar">
-                    <div class="switch-container">
-                        <input id="switch" type="checkbox">
-                        <label class="switch-button" for="switch">
-                            <ion-icon id="sun" name="sunny-outline"></ion-icon>
-                            <ion-icon id="moon" name="moon-outline"></ion-icon>
-                        </label>
-                    </div>
                     <a class="nav-link" href="#biografia">Biografia</a>
                     <a class="nav-link" href="#discografia">Discografia</a>
                     <a class="nav-link" href="#redes">Redes sociais</a>
@@ -33,7 +33,7 @@
             </header>
             <section id="biografia" class="bio-container">
                 <div class="images-container">
-                    <span class="gradient "></span>
+                    <span class="gradient"></span>
                     <img class="photo" src="assets/images/halsey-picture.png" alt="Halsey's picture">
                     <span class="signature"></span>
                 </div>
