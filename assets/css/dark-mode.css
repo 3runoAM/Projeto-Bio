@@ -1,0 +1,114 @@
+.dark {
+    background-color: var(--chinese-black);
+    color: var(--white);
+    transition: ease 0.5s;
+}
+
+
+header.dark{
+    box-shadow: 0 0.020rem 0.05rem var(--white);
+}
+
+svg.main-icon.dark {
+    background: url("/assets/images/dark/icon.svg") no-repeat;
+    background-size: cover;
+}
+
+
+.gradient.dark {
+    background: radial-gradient(50% 50% at 50% 50%, var(--red) 0%, var(--chinese-black) 100%);
+}
+
+.release-container.dark {
+    background-color: #3F0A6F95;
+}
+
+.release-title.dark {
+    background-color: unset;
+    color: var(--white)
+}
+
+.disco-divider.dark {
+    background-color: var(--white);
+}
+
+.arrow-left.dark {
+    background: url("/assets/images/dark/arrow-left.svg") no-repeat;
+    background-size: cover;
+}
+
+.arrow-right.dark {
+    background: url("/assets/images/dark/arrow-right.svg") no-repeat;
+    background-size: cover;
+}
+
+#slide-1.dark {
+    background-color: #537F79D2;
+}
+
+#slide-2.dark {
+    background-color: #C999B0D1;
+}
+
+#slide-3.dark {
+    background-color: #FD0000BF;
+}
+
+#slide-4.dark {
+    background-color: #44708DD1;
+}
+
+.social-icon.dark {
+    fill: var(--white);
+}
+
+.x-logo.dark {
+    background: url("/assets/images/dark/Twitter X.svg") no-repeat;
+}
+
+.scroll-top.dark {
+    background: url("/assets/images/dark/scroll-top.svg") no-repeat;
+}
+
+.switch-container.dark {
+    border-color: var(--white);
+}
+
+.switch-button.dark {
+    transition: ease 0.5s;
+    background: var(--white);
+    transform: translateX(40px);
+    width: 47px;
+    height: 47px;
+}
+
+#sun.dark{
+    display: none;
+}
+
+#moon.dark{
+    display: initial;
+    width: 30px;
+    height: 30px;
+}
+
+.footer.dark{
+    box-shadow: 0 -0.020rem 0.05rem var(--white);
+}
+
+.content-container.dark,
+.disco-controls.dark,
+.disco-data.dark,
+.slide-content-container.dark,
+.disco-description-container.dark,
+.disco-description.dark,
+.bold.dark,
+.disco-halsey-description.dark,
+.scroll-container.dark,
+.signature.dark,
+.bio-container.dark,
+.images-container.dark,
+.photo.dark,
+#moon.dark {
+    background-color: unset;
+}

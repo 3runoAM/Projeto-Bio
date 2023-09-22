@@ -4,19 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
-        <link rel="icon" href="assets/images/icon.svg">
+        <link rel="icon" href="assets/images/light/icon.svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Red+Hat+Text:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fontsgeek.com/fonts/Aviano-Serif-Regular">
+        <link rel="stylesheet" href="assets/css/reset-css.css">
         <link rel="stylesheet" href="assets/css/base-styles.css">
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
         <title>Halsey Fanpage</title>
     </head>
-    <body>
-        <div class="content-container">
-            <header class="header">
-                <a href="#section"><svg class="main-icon"></svg></a>
+    <body class="">
+        <div class="content-container ">
+            <header class="header ">
+                <a href="#section"><svg class="main-icon "></svg></a>
                 <nav class="nav-bar">
+                    <div class="switch-container">
+                        <input id="switch" type="checkbox">
+                        <label class="switch-button" for="switch">
+                            <ion-icon id="sun" name="sunny-outline"></ion-icon>
+                            <ion-icon id="moon" name="moon-outline"></ion-icon>
+                        </label>
+                    </div>
                     <a class="nav-link" href="#biografia">Biografia</a>
                     <a class="nav-link" href="#discografia">Discografia</a>
                     <a class="nav-link" href="#redes">Redes sociais</a>
@@ -24,7 +33,7 @@
             </header>
             <section id="biografia" class="bio-container">
                 <div class="images-container">
-                    <span class="gradient"></span>
+                    <span class="gradient "></span>
                     <img class="photo" src="assets/images/halsey-picture.png" alt="Halsey's picture">
                     <span class="signature"></span>
                 </div>
@@ -36,32 +45,30 @@
                         respeito aos direitos humanos.</p>
                 </div>
             </section>
-            <section class="release-container">
-                <p class="release-title">Último lançamento</p>
-                <iframe class="release-video" src="https://www.youtube.com/embed/9PdH-zavwO4?si=q_Z836uvYO25TPht" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section class="release-container ">
+                <p class="release-title ">Último lançamento</p>
+                <iframe class=" release-video" src="https://www.youtube.com/embed/9PdH-zavwO4?si=q_Z836uvYO25TPht" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
-
-
-            <section id="discografia" class="disco-container">
+            <section id="discografia " class="disco-container">
                 <span class="disco-divider"></span>
                 <div class="disco-controls">
-                    <span class="left-arrow"></span>
+                    <span class="arrow-left"></span>
                     <p class="disco-title">Discografia</p>
-                    <span class="right-arrow"></span>
+                    <span class="arrow-right"></span>
                 </div>
                 <span class="disco-divider"></span>
                 <div class="carousel-container">
-                    <div class="slide slide1 active">
-                        <p class="disco-data">2014</p>
-                        <div class="slide-content-container">
-                            <iframe class="disco-video" src="https://www.youtube.com/embed/F5hGGYKOle0?si=UjvYVZHJImZmWAea" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <div class="disco-description-container">
-                                <p class="disco-description">
-                                    <span class="bold">Room 93 </span>é o EP de estreia de Halsey, ele a lançou à fama sendo
+                    <div id="slide-1" class="slide active">
+                        <p class="disco-data ">2014</p>
+                        <div class="slide-content-container ">
+                            <iframe class="disco-video " src="https://www.youtube.com/embed/F5hGGYKOle0?si=UjvYVZHJImZmWAea" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="disco-description-container ">
+                                <p class="disco-description ">
+                                    <span class="bold ">Room 93 </span>é o EP de estreia de Halsey, ele a lançou à fama sendo
                                     muitos os que atribuem a "Ghost", seu primeiro single e o single principal deste EP, como
                                     seu sucesso de destaque.
                                 </p>
-                                <p class="disco-halsey-description">
+                                <p class="disco-halsey-description ">
                                     “O EP é uma narrativa sobre como em um quarto de hotel,
                                     devido à intimidade forçada, você pode realmente ser você mesmo por um tempo ou pode
                                     realmente ser alguém que você não é. Portanto, trata-se de relacionamentos humanos sob a
@@ -71,45 +78,105 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide slide2"></div>
-                    <div class="slide slide3"></div>
-                    <div class="slide slide4"></div>
-                    <div class="slide slide5"></div>
+                    <div id="slide-2" class="slide">
+                        <p class="disco-data">2015</p>
+                        <div class="slide-content-container">
+                            <iframe class="disco-video" src="https://www.youtube.com/embed/JGulAZnnTKA?si=YXctymwwwyZGKmTv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="disco-description-container">
+                                <p class="disco-description">
+                                    <span class="bold">Badlands </span>é o primeiro álbum de estudio de Halsey. O
+                                    nome Badlands é uma referência ao estado mental de Halsey enquanto escrevia o
+                                    álbum e é utilizado para dar um lugar físico como metáfora para uma mente
+                                    desolada e solitária.
+                                </p>
+                                <p class="disco-halsey-description">
+                                    “A ideia de Badlands era criar um espaço com som, o que é realmente difícil de
+                                    fazer. Eu estava em uma sessão com Tim Anderson, e ele estava apenas brincando
+                                    com esses sons baixos e envolventes, e então eu escrevi "Drive" em provavelmente
+                                    uns 10 minutos.”
+                                    <br>— Halsey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-3" class="slide">
+                        <p class="disco-data">2017</p>
+                        <div class="slide-content-container">
+                            <iframe class="disco-video" src="https://www.youtube.com/embed/kzQTc0-iBX8?si=7bwuAZgbFiKTSn2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="disco-description-container">
+                                <p class="disco-description">
+                                    <span class="bold">Hopeless Fountain Kingdom</span> foi o segundo album de estudio
+                                    de Halsey. O álbum foi citado pela primeira vez nos créditos de seu álbum de
+                                    estreia, "Badlands", que terminam com as palavras "O garoto que vive atrás dos
+                                    tijolos, HFK".
+                                </p>
+                                <p class="disco-halsey-description">
+                                    “Para mim, 'Hopeless Fountain Kingdom' é uma história sobre duas pessoas que desejam
+                                    tanto estar apaixonadas que estão dispostas a mudar a si mesmas por seu amor e, ao
+                                    fazer isso, deixam morrer as versões reais de si mesmas, então é uma história à la
+                                    Romeu e Julieta.”
+                                    <br>— Halsey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-4" class="slide">
+                        <p class="disco-data">2020</p>
+                        <div class="slide-content-container">
+                            <iframe class="disco-video" src="https://www.youtube.com/embed/ZAfAud_M_mg?si=RX2d_tP5p6OK8q20&amp;start=24" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="disco-description-container">
+                                <p class="disco-description">
+                                    <span class="bold">Manic</span> é o terceiro álbum de estúdio de Halsey. O conceito
+                                    do álbum é que ele foi feito "por Ashley para Halsey" - a verdadeira identidade de
+                                    Halsey se comunicando com sua persona musical.
+                                </p>
+                                <p class="disco-halsey-description">
+                                    “O álbum trata muito sobre eu superar alguns traumas e coisas que, de outra forma,
+                                    estavam me impedindo de me sentir realmente eu mesma em minha juventude. E ter 25
+                                    anos e lançar um álbum foi difícil para mim porque eu tinha uma nova perspectiva
+                                    sobre minha feminilidade, minha sexualidade e as coisas que passei.”
+                                    <br>— Halsey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-5" class="slide">
+                        <p class="disco-data">2021</p>
+                        <div class="slide-content-container">
+                            <iframe class="disco-video" src="https://www.youtube.com/embed/7Azv0G85lh8?si=04hUtZ-1wdl9x8cs&amp;start=24" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="disco-description-container">
+                                <p class="disco-description">
+                                    <span class="bold">If I Can't Have Love</span>, I Want Power é o quarto álbum de
+                                    estúdio de Halsey. Apresentando uma forte influência industrial, e foi descrito por
+                                    Halsey como um álbum conceitual sobre "as alegrias e horrores da gravidez e do
+                                    parto."
+                                </p>
+                                <p class="disco-halsey-description">
+                                    "Meu corpo pertenceu ao mundo de muitas maneiras nos últimos anos, e essa imagem é
+                                    minha maneira de recuperar minha autonomia e afirmar meu orgulho e força como uma
+                                    força vital para meu ser humano."
+                                    <br>— Halsey
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-
+            <div class="scroll-container">
+                <span class="scroll-top"></span>
+            </div>
             <footer id="redes" class="footer">
-               <a href="https://www.halseymusicstore.com/"> <svg class="main-icon"></svg></a>
+               <a href="https://www.halseymusicstore.com/"><svg class="main-icon"></svg></a>
                 <div class="socials">
                     <a href="https://www.instagram.com/iamhalsey/"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
                     <a href="https://www.youtube.com/channel/UCOCgB3xd-B-1qAm-hR9OLrA"><ion-icon class="social-icon" name="logo-youtube"></ion-icon></a>
-                    <a href="https://twitter.com/halsey"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                    <a href="https://twitter.com/halsey"><span class="x-logo social-icon"></span></a>
                     <a href="https://soundcloud.com/halseymusic"><ion-icon class="social-icon" name="logo-soundcloud"></ion-icon></a>
                 </div>
             </footer>
         </div>
-
-
-<!--    2015 Badlands é o primeiro álbum de estudio de Halsey. O nome Badlands é uma referência ao estado mental de Halsey enquanto escrevia o álbum e é utilizado para dar um lugar físico como metáfora para uma mente desolada e solitária.-->
-
-<!--    “A ideia de "Badlands" era criar um espaço com som, o que é realmente difícil de fazer. Eu estava em uma sessão com Tim Anderson, e ele estava apenas brincando com esses sons baixos e envolventes, e então eu escrevi "Drive" em provavelmente uns 10 minutos.” — Halsey-->
-
-<!--    2017 Hopeless Fountain Kingdom foi o segundo album de estudio de Halsey. O álbum foi citado pela primeira vez nos créditos de seu álbum de estreia, "Badlands", que terminam com as palavras "O garoto que vive atrás dos tijolos, HFK".-->
-
-<!--    “Para mim, 'Hopeless Fountain Kingdom' é uma história sobre duas pessoas que desejam tanto estar apaixonadas que estão dispostas a mudar a si mesmas por seu amor e, ao fazer isso, deixam morrer as versões reais de si mesmas, então é uma história à la Romeu e Julieta.” — Halsey-->
-
-<!--    2020 Manic é o terceiro álbum de estúdio de Halsey. O conceito do álbum é que ele foi feito "por Ashley para Halsey" - a verdadeira identidade de Halsey se comunicando com sua persona musical.-->
-
-<!--    “O álbum trata muito sobre eu superar alguns traumas e coisas que, de outra forma, estavam me impedindo de me sentir realmente eu mesma em minha juventude. E ter 25 anos e lançar um álbum foi difícil para mim porque eu tinha uma nova perspectiva sobre minha feminilidade, minha sexualidade e as coisas que passei.” — Halsey-->
-
-<!--    2021 If I Can't Have Love, I Want Power é o quarto álbum de estúdio de Halsey. Apresentando uma forte influência industrial, e foi descrito por Halsey como um álbum conceitual sobre "as alegrias e horrores da gravidez e do parto".-->
-
-<!--    "Meu corpo pertenceu ao mundo de muitas maneiras nos últimos anos, e essa imagem é minha maneira de recuperar minha autonomia e afirmar meu orgulho e força como uma força vital para meu ser humano." — Halsey-->
-
-
-
-
+        <script src="scripts/script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
+
