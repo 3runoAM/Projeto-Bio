@@ -1,12 +1,22 @@
 .dark {
-    background-color: var(--chinese-black);
     color: var(--white);
     transition: ease 0.5s;
 }
 
+body.dark, header.dark{
+    background-color: var(--chinese-black);
+}
 
 header.dark{
     box-shadow: 0 0.020rem 0.05rem var(--white);
+}
+.gradient.dark{
+    background: radial-gradient(50% 50% at 50% 50%, var(--red) 0%, var(--chinese-black) 100%)
+}
+
+.hidden-menu-image.dark{
+    background: url("/assets/images/dark/menu-fechado.svg") no-repeat;
+    background-size: cover;
 }
 
 svg.main-icon.dark {
@@ -109,19 +119,14 @@ svg.main-icon.dark {
 }
 
 @media screen and (max-width: 1600px) {
-    .switch-container.dark {
-        width: 90px;
-        height: 45px;
-    }
-
     #moon.dark {
         width: 20px;
         height: 20px;
     }
 
     .switch-button.dark {
-        width: 37px;
-        height: 37px;
-        transform: translateX(40px);
+        width: 30px;
+        height: 30px;
+        transform: translateX(28px);
     }
 }

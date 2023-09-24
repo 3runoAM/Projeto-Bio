@@ -45,3 +45,21 @@ document.addEventListener('DOMContentLoaded', function(){
         (darkModeSwitch.checked) ? addDarkMode() : removeDarkMode();
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const showMenu = (menuIcon, navBar) =>
+    menuIcon.addEventListener('click', function (){
+        menuIcon.classList.add('new-icon-position')
+        navBar.classList.add('show-menu');
+    });
+    const hideMenu = (menuIcon, navBar) =>
+        menuIcon.addEventListener('click', function (){
+            menuIcon.classList.remove('new-icon-position')
+            navBar.classList.remove('show-menu');
+        });
+    const menuIcon = document.getElementById("hidden-menu-image");
+    menuIcon.addEventListener('click', ()=>{
+        const navBar = document.getElementById("nav-bar");
+        (navBar.classList.contains('show-menu')) ? hideMenu(menuIcon, navBar) : showMenu(menuIcon, navBar)
+    })
+})
