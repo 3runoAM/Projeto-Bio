@@ -16,7 +16,6 @@ header.dark{
 
 .hidden-menu-image.dark{
     background: url("/assets/images/dark/menu-fechado.svg") no-repeat;
-    background-size: cover;
 }
 
 svg.main-icon.dark {

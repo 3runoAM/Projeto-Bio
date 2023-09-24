@@ -107,9 +107,8 @@ html {
 
 .hidden-menu-image {
     background: url("/assets/images/light/menu-fechado.svg") no-repeat;
-    background-size: cover;
-    width: 3.5rem;
-    height: 1.05rem;
+    width: 3.58rem;
+    height: 1.1rem;
 }
 
 .nav-bar {
@@ -766,6 +765,9 @@ html {
     }
 }
 @media screen and (max-width: 768px) {
+    .content-container{
+        row-gap: 5rem;
+    }
     .header{
         column-gap: 1rem;
     }
@@ -807,5 +809,291 @@ html {
         justify-content: flex-end;
         width: 40%;
         cursor: pointer;
+    }
+
+    .bio-container{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 5rem;
+        margin-top: 15rem;
+    }
+
+    .photo{
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .gradient{
+        width: 18rem;
+        height: 22rem;
+        top: -3rem;
+        right: 0.2rem;
+    }
+
+    .signature{
+        width: 12rem;
+        height: 8rem;
+        left: 3rem;
+        bottom: -4rem;
+    }
+
+    .description-container{
+        width: 28rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        width: 28rem;
+        margin: 0;
+
+    }
+
+    .release-container{
+        margin-top: 1rem
+    }
+
+    .release-container{
+        height: 25rem;
+    }
+
+    .release-title{
+        font-size: 1.4rem;
+    }
+
+    .release-video{
+        width: 28rem;
+        height: 15rem;
+    }
+    /**/
+    .disco-divider{
+        width: 76%;
+    }
+
+    .disco-controls{
+        width: 76%;
+    }
+
+    .slide.active{
+        width: 110%;
+        height: 48rem;
+    }
+
+    .slide-content-container{
+        justify-content: space-between;
+        height: 38rem;
+    }
+
+    .disco-data{
+        font-size: 1.6rem;
+    }
+
+    .disco-video {
+        width: 28rem;
+        height: 15rem;
+    }
+    /**/
+    .footer{
+        justify-content: space-evenly;
+        column-gap: 5rem;
+    }
+
+
+    .socials{
+        justify-content: space-between;
+        column-gap: 0.5rem;
+
+    }
+
+    .social-icon{
+        height: 2.5rem;
+    }
+
+    .x-logo{
+        height: 2.6rem;
+    }
+
+    /**/
+    .scroll-top{
+        width: 4rem;
+        height: 4.1rem;
+        top: 43.5rem;
+        right: 2.8rem;
+        z-index: 3;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hidden-menu {
+        width: 30%;
+    }
+
+    .header {
+        height: 7.5rem;
+    }
+
+    .nav-bar {
+        top: 7rem;
+    }
+
+    a.nav-link {
+        font-size: 1rem;
+    }
+
+    .main-icon {
+        width: 5rem;
+        height: 2.5rem;
+    }
+
+    .bio-container {
+        margin-top: 13rem;
+    }
+
+    .gradient {
+        width: 15rem;
+        height: 18rem;
+        top: -2rem;
+    }
+
+    .photo {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .signature {
+        left: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .disco-divider {
+        width: 85%;
+    }
+
+    .disco-controls {
+        height: 3.5rem;
+        width: 85%;
+    }
+
+    .disco-title {
+        font-size: 1.2rem;
+    }
+
+    .arrow-left, .arrow-right {
+        width: 1rem;
+        height: 1.2rem;
+    }
+
+    .disco-video {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .slide.active {
+        width: 135%;
+        height: 40rem;
+    }
+
+    .slide-content-container {
+        justify-content: space-between;
+        height: 33rem;
+    }
+
+    .disco-data {
+        font-size: 1.3rem;
+    }
+
+    .disco-description-container {
+        width: 20rem;
+    }
+
+    .disco-description, .disco-halsey-description {
+        font-size: 1rem;
+    }
+
+    .disco-halsey-description {
+        width: inherit;
+    }
+
+    .footer{
+        justify-content: space-evenly;
+    }
+
+    .socials{
+        width: 15rem;
+    }
+
+    .social-icon {
+        width: 2rem;
+    }
+
+    .x-logo{
+        width: 2.8rem;
+    }
+
+    .scroll-top{
+        width: 3rem;
+        height: 3.1rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .main-icon{
+        width: 4rem;
+        height: 1.8rem;
+    }
+
+    .description{
+        font-size: 0.9rem;
+        width: 18rem;
+    }
+    .description-container{
+        width: 18rem;
+    }
+
+    .release-container{
+        height: 18rem;
+    }
+
+    .release-title{
+        font-size: 1.2rem;
+    }
+
+    .release-video{
+        width: 19rem;
+        height: 12rem;
+    }
+
+    .slide.active{
+        width: 118%;
+    }
+
+    .disco-data{
+        font-size: 1rem;
+    }
+
+    .disco-description-container{
+        width: 17rem;
+    }
+
+    .disco-description, .disco-halsey-description{
+        font-size: 0.9rem;
+    }
+
+    .footer{
+        justify-content: space-evenly;
+    }
+
+    .socials{
+        width: 10rem;
+        align-items: center;
+    }
+
+    .social-icon{
+        width: 1.5rem;
+    }
+
+    .x-logo{
+        width: 1.6rem;
+        height: 1.5rem;
     }
 }
